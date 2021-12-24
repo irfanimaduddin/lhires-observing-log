@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>682</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_3" rowstretch="0,0,0,0,0,0,1,3,0" rowminimumheight="0,0,0,0,0,0,0,0,0">
+      <item row="7" column="0">
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="6" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,0,2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="1,2,1">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2" rowminimumheight="0">
+            <item row="0" column="0">
+             <widget class="QLabel" name="groove_label">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Grating</string>
+              </property>
+              <property name="buddy">
+               <cstring>groove_form</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="groove_form">
+              <item>
+               <property name="text">
+                <string>600 g/mm</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1200 g/mm</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2400 g/mm</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QDoubleSpinBox" name="micro_setting_form"/>
+            </item>
+            <item row="0" column="4">
+             <widget class="QLabel" name="feature_label">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Spectral Feature</string>
+              </property>
+              <property name="buddy">
+               <cstring>feature_form</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="micro_setting_label">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Micrometer Setting</string>
+              </property>
+              <property name="buddy">
+               <cstring>micro_setting_form</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLineEdit" name="feature_form"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="observer_label">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Observer(s)</string>
+              </property>
+              <property name="buddy">
+               <cstring>observer_form</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="observer_form"/>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_11">
+              <item row="2" column="1">
+               <widget class="QLabel" name="lamp_label">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Comparison Lamp</string>
+                </property>
+                <property name="buddy">
+                 <cstring>lamp_form</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QComboBox" name="lamp_form">
+                <item>
+                 <property name="text">
+                  <string>NeAr</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>FeNeAr</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="1">
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_9" rowstretch="0,0" columnstretch="0,1,2,0,1,0" rowminimumheight="0,0" columnminimumwidth="0,1,2,0,1,0">
+            <item row="0" column="0">
+             <widget class="QLabel" name="datatype_label">
+              <property name="text">
+               <string>Datatype</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="objname_label">
+              <property name="text">
+               <string>Object Name</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="filename_label">
+              <property name="text">
+               <string>File Name</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLabel" name="bin_label">
+              <property name="text">
+               <string>Bin</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QLabel" name="exptime_label">
+              <property name="text">
+               <string>Exptime</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLabel" name="exptime_label_2">
+              <property name="text">
+               <string>N</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QComboBox" name="datatype_form">
+              <item>
+               <property name="text">
+                <string>Object</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Comparison</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Bias</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Dark</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Flat</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="objname_form">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLineEdit" name="filename_form"/>
+            </item>
+            <item row="1" column="3">
+             <widget class="QComboBox" name="bin_form">
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QDoubleSpinBox" name="exptime_form"/>
+            </item>
+            <item row="1" column="5">
+             <widget class="QSpinBox" name="spinBox"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout" rowminimumheight="1,1,1,1,1">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMinimumSize</enum>
+          </property>
+          <item row="0" column="2">
+           <widget class="QDoubleSpinBox" name="ccdtemp_form"/>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="ccdtemp_label">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>CCD Temperature (C)</string>
+            </property>
+            <property name="buddy">
+             <cstring>ccdtemp_form</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QLabel" name="ambtemp_label">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Ambient Temperature (C)</string>
+            </property>
+            <property name="buddy">
+             <cstring>ambtemp_form</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QDoubleSpinBox" name="ambhum_form"/>
+          </item>
+          <item row="1" column="2">
+           <widget class="QDoubleSpinBox" name="ambtemp_form"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="skycond_label">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Sky Condition</string>
+            </property>
+            <property name="buddy">
+             <cstring>skycond_form</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QLabel" name="ambhum_label">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Ambient Humidity (%)</string>
+            </property>
+            <property name="buddy">
+             <cstring>ambhum_form</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="comment_label">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Comment(s)</string>
+            </property>
+            <property name="buddy">
+             <cstring>comment_form</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1" colspan="2">
+           <widget class="QLineEdit" name="comment_form"/>
+          </item>
+          <item row="3" column="1" colspan="2">
+           <widget class="QComboBox" name="skycond_form">
+            <item>
+             <property name="text">
+              <string>Variable</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Good</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Hazy</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Cloudy</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Rain</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="title_welcome">
+        <property name="baseSize">
+         <size>
+          <width>800</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial Black</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Welcome to</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="software_info2">
+        <property name="baseSize">
+         <size>
+          <width>800</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>version: 2.0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="software_info1">
+        <property name="baseSize">
+         <size>
+          <width>800</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>by: Irfan Imaduddin</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="software_info3">
+        <property name="baseSize">
+         <size>
+          <width>800</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>contact: irfanimaduddin[at]gmail[dot]com</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="titlename">
+        <property name="baseSize">
+         <size>
+          <width>800</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial Black</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>LHIRES Telescope Data Logging Software</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <layout class="QGridLayout" name="gridLayout_12">
+        <item row="0" column="2">
+         <widget class="QPushButton" name="startlog_button">
+          <property name="text">
+           <string>Start Log</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="nightmode_check">
+          <property name="text">
+           <string>Night Mode</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QPushButton" name="resetlog_button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Reset Log</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="updatelog_button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Update Log</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QPushButton" name="closewindow_button">
+          <property name="text">
+           <string>Close Window</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QPushButton" name="savelog_button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Save Log</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="7" column="1">
+       <widget class="QTableView" name="tableview">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>800</width>
+          <height>280</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>800</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>startlog_button</tabstop>
+  <tabstop>updatelog_button</tabstop>
+  <tabstop>resetlog_button</tabstop>
+  <tabstop>savelog_button</tabstop>
+  <tabstop>nightmode_check</tabstop>
+  <tabstop>closewindow_button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
